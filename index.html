@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Geo-Location (BS3)</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="https://github.com/jvining">
+	<meta name="description" content="A proof of concept demo of Geo-Location sniffing that triggers a bootstrap 3 modal based on country, built on Starter Bootstrap Template (http://bit.ly/1SnymWq)">
+ 
+	<!-- Open Graph -->
+ 	<meta property="og:url" content="https://jvining.github.io/Geo-Location-BS3" />
+	<meta property="og:type" content="Product" />
+	<meta property="og:title" content="Geo-Location (BS3)" />
+	<meta property="og:description" content="A proof of concept demo of Geo-Location sniffing that triggers a bootstrap 3 modal based on country, built on Starter Bootstrap Template (http://bit.ly/1SnymWq)" />
+	<meta property="og:image" content="https://place-hold.it/600x315/563d7c/fff/000&text=Geo-Location-(BS3)" />
+
+	<!-- CSS -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+ 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css">
+	<style rel="stylesheet" type="text/css">
+		body {background:#fff; font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";}
+		body > .container {margin-top:5em; min-height:calc(85vh - 10em);}
+		body h1, body h2, body h3, body h4, body h5 {font-weight:300;}
+		body [class*="col-"] {font-size:16px; color:#5f5f5f;}
+		body .navbar .nav.navbar-nav{float:right;}
+		footer {background:#222; margin-top:50px; padding:25px 0;}
+		footer [class*="col-"] {color:#666;}
+		footer [class*="col-"] a {color:#999;}
+		footer [class*="col-"] a:hover {color:#fff;}
+		.voffset  {margin-top:0.2em;} .voffset0 {margin-top:0.5em}  .voffset1 {margin-top:1.0em;}  
+		.voffset2 {margin-top:2.0em;} .voffset3 {margin-top:3.0em;} .voffset4 {margin-top:4.0em;} 
+		.voffset5 {margin-top:5.0em;} .voffset6 {margin-top:6.0em;} .voffset7 {margin-top:7.0em;}
+		.voffset8 {margin-top:8.0em;} .voffset9 {margin-top:9.0em;} .voffsetx {margin-top:10em;}
+		.fa-lg,.fa-1x,.fa-2x,.fa-3x,.fa-4x,.fa-5x,.fa-6x,.fa-7x,.fa-8x,.fa-9x,.fa-10x {line-height:1.25em;} 
+		.fa-lg {font-size:1.3em;} .fa-1x {font-size:1.5em;} .fa-2x {font-size:2.0em;} 
+		.fa-3x {font-size:3.0em;} .fa-4x {font-size:4.0em;} .fa-5x {font-size:5.0em;}
+		.fa-6x {font-size:6.0em;} .fa-7x {font-size:7.0em;} .fa-8x {font-size:8.0em;}
+		.fa-9x {font-size:9.0em;} .fa-10x{font-size:10em;}
+		.text-light {font-weight:300;} .text-normal{font-weight:400;}
+		.text-bold {font-weight:700;} .text-white {color:#fff;}
+		.text-shadow {text-shadow:rgba( 0, 0, 0, .25 ) .045em .045em;}
+		.btn,.btn:hover {transition:.3s ease-in-out;}
+		.bg-lighten {box-shadow:inset 10000px 0 0 rgba(255, 255, 255, .90);}
+		.bg-darken {box-shadow:inset 10000px 0 0 rgba(0, 0, 0, .15);} 
+	</style> 
+</head>
+<body>
+
+ 	<nav class="navbar navbar-inverse navbar-fixed-top">
+ 	    <div class="container">
+ 	        <div class="navbar-header">
+ 	            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+ 	                <span class="sr-only">Toggle navigation</span>
+ 	                <span class="icon-bar"></span>
+ 	                <span class="icon-bar"></span>
+ 	                <span class="icon-bar"></span>
+ 	            </button>
+ 	            <a class="navbar-brand">Geo-Location (BS3)</a>
+ 	        </div>
+ 	        <div class="collapse navbar-collapse" id="navbar-collapse">
+ 	            <ul class="nav navbar-nav ">
+ 	                <li><a>About</a></li>
+ 	                <li><a>Services</a></li>
+ 	                <li><a>Contact</a></li>
+ 	             </ul>
+ 	        </div>
+ 	    </div>
+ 	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="fa-3x">Welcome to the online Reservation system for<br><strong>Blue Mountain Campground, Saugerties NY</strong></h2>
+				<p class="fa-lg">Below you can search for available Tent / RV sites and cabin rentals for a specified date or date range. For an extended stay, please contact us directly via phone. Should you encounter any difficulty during the reservation process please feel free to call us with any questions at <a href="tel:1-845-246-7564">+1 (845) 246-7564</a> or if email is more your speed you can drop us an email using our contact form <a class="btn btn-xs btn-site" href="/contact">found here</a>.</p>
+				<p><iframe style="height:60vh;" src="https://www.viswrks.com/CampWorks/WebRes/webavail.php?CID=1288" width="100%" frameborder="0" scrolling="no"></iframe></p>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<p>Geo-Location (BS3) &copy; 2019</p>
+  				</div>
+				<div class="col-md-4 col-md-offset-4">
+					<ul class="list-unstyled list-inline">
+						<li><a target="_blank" href="https://getbootstrap.com" data-toggle="tooltip" data-placement="top" data-original-title="Version: 3.3.7">Bootstrap </a></li>
+						<li><a target="_blank" href="https://fontawesome.io/" data-toggle="tooltip" data-placement="top" data-original-title="Version: 4.6.3">Font Awesome </a></li>
+						<li><a target="_blank" href="https://jquery.com/" data-toggle="tooltip" data-placement="top" data-original-title="Version: 1.9.1">Jquery </a></li>
+ 					</ul>
+ 	 			</div>
+			</div>
+		</div>
+	</footer>
+	
+<!-- JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+	// Enable Tool Tips Globally 
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
+</script>
+
+<script src="//www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+<script>
+	jQuery(document).ready(function($) {
+		if (geoplugin_countryName() === 'United States') {
+			// Shhhh Nothing to see here
+ 		} else {
+			$('#exampleModal').modal('show');
+		}
+	});
+</script>
+<div class="modal fade" id="exampleModal" role="dialog" data-keyboard="false" data-backdrop="static">
+	<div class="modal-dialog">
+		<div class="modal-content">
+ 			<div class="modal-header">
+ 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+ 				<h4 class="modal-title">Reservation System Alert!</h4>
+ 			</div>
+ 			<div class="modal-body">
+ 				<p>Our Reservation system has detected that you are visiting from outside the United States. Please note that we are located in Saugerties, NY 12477 and do not offer refunds for reservations made in error</p>
+ 			</div>
+ 			<div class="modal-footer">
+ 				<a class="btn btn-danger" href="https://www.bluemountaincampground.com">Cancel Reservation</a>
+ 				<a class="btn btn-success" data-dismiss="modal" type="button">I understand & wish to continue making my reservation</a>
+			</div>
+ 	   </div>
+	</div>
+</div>
+
+</body>
+</html>
